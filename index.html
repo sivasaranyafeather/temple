@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Navbar & Carousel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+ <body>
+    <!-- Temple Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-gopuram"></i>Divine Temple
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <i class="fas fa-info-circle"></i> About Temple
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#darshan">
+                            <i class="fas fa-praying-hands"></i> Darshan Timings
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">
+                            <i class="fas fa-calendar-alt"></i> Events
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">
+                            <i class="fas fa-images"></i> Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fas fa-phone"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full Width Carousel -->
+    <section class="carousel-section">
+        <div id="templeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="3"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- <div class="slide-number">1 / 4</div> -->
+                    <i class="fas fa-om temple-icon temple-icon-1"></i>
+                    <i class="fas fa-dharmachakra temple-icon temple-icon-2"></i>
+                    <img src="assets/images/home1.jpg" alt="Temple Main View">
+                    <div class="carousel-caption">
+                        <h2>🕉️ Welcome to Divine Temple 🕉️</h2>
+                        <p>Experience peace, divinity and spiritual awakening at our sacred temple. Join us in prayer and meditation.</p>
+                        <div class="btn-group">
+                            <button class="btn">Book Darshan</button>
+                            <button class="btn btn-outline">Virtual Tour</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <!-- <div class="slide-number">2 / 4</div> -->
+                    <i class="fas fa-pray temple-icon temple-icon-1"></i>
+                    <i class="fas fa-gopuram temple-icon temple-icon-3"></i>
+                    <img src="assets/images/home2.jpg" alt="Temple Architecture">
+                    <div class="carousel-caption">
+                        <h2>🪔 Sacred Architecture 🪔</h2>
+                        <p>Marvel at the magnificent architecture and intricate carvings that tell stories of devotion spanning centuries.</p>
+                        <div class="btn-group">
+                            <button class="btn">Explore History</button>
+                            <button class="btn btn-outline">Photo Gallery</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <!-- <div class="slide-number">3 / 4</div> -->
+                    <i class="fas fa-hands-praying temple-icon temple-icon-2"></i>
+                    <img src="assets/images/home3.jpg" alt="Temple Rituals">
+                    <div class="carousel-caption">
+                        <h2>🙏 Daily Rituals & Puja 🙏</h2>
+                        <p>Participate in our daily rituals, special pujas and festivals. Connect with the divine through ancient traditions.</p>
+                        <div class="btn-group">
+                            <button class="btn">Puja Schedule</button>
+                            <button class="btn btn-outline">Book Puja</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <!-- <div class="slide-number">4 / 4</div> -->
+                    <i class="fas fa-om temple-icon temple-icon-1"></i>
+                    <i class="fas fa-spa temple-icon temple-icon-3"></i>
+                    <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1920&h=1080&fit=crop" alt="Temple Evening">
+                    <div class="carousel-caption">
+                        <h2>✨ Evening Aarti & Celebrations ✨</h2>
+                        <p>Join thousands of devotees in our divine evening aarti. Experience the spiritual energy and divine blessings.</p>
+                        <div class="btn-group">
+                            <button class="btn">Aarti Timings</button>
+                            <button class="btn btn-outline">Live Stream</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#templeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#templeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Temple Section -->
+    <section class="about-temple-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Images on Right Side -->
+                <div class="col-lg-6 order-lg-2">
+                    <div class="about-image-wrapper">
+                        <!-- Large Main Gopuram Image -->
+                        <div class="large-circular-frame">
+                            <div class="large-circle-outer"></div>
+                            <div class="large-circle-inner">
+                                <img src="assets/images/home2.jpg" alt="Temple Gopuram">
+                            </div>
+                        </div>
+                        
+                        <!-- Small Overlapping Temple Image -->
+                        <div class="small-circular-frame">
+                            <div class="small-circle-outer"></div>
+                            <div class="small-circle-inner">
+                                <img src="assets/images/unnamed.webp" alt="Temple Architecture">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content on Left Side -->
+                <div class="col-lg-6 order-lg-1">
+                    <div class="about-content">
+                        <h2 class="about-title">About Us</h2>
+                        <div class="title-underline"></div>
+                        <p class="about-text">
+                            We specialize in preserving the divine heritage of Sri Lakshmi Temple, ensuring each ritual and ceremony meets our sacred traditional standards before offering blessings to our devotees. Our comprehensive temple services include everything from daily pujas to grand festivals, making your spiritual journey seamless and deeply fulfilling.
+                        </p>
+                        <p class="about-text">
+                            Our experienced team of priests understands the ancient Vedic scriptures and provides personalized spiritual guidance to help you connect with the divine. Whether you're seeking blessings for prosperity, peace, health, or spiritual enlightenment, we're here to guide you every step of the sacred way with devotion and dedication.
+                        </p>
+                        <button class="btn-contact">
+                            <span class="contact-icon">📞</span> Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Divine Services</h2>
+            <p class="text-center mb-5" style="font-size: 1.2rem; color: #666;">Experience spiritual bliss through our sacred offerings</p>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">🪔</div>
+                        <h3 class="feature-title">Daily Puja</h3>
+                        <p class="feature-text">Experience divine rituals performed by our experienced priests with traditional vedic chants and sacred offerings.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">🙏</div>
+                        <h3 class="feature-title">Special Darshan</h3>
+                        <p class="feature-text">Book your special darshan for personalized blessings and divine grace from the deity in our serene sanctum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">📿</div>
+                        <h3 class="feature-title">Spiritual Events</h3>
+                        <p class="feature-text">Participate in festivals, bhajans, and spiritual discourses that connect you with divine consciousness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Timings Section -->
+    <section id="timings" class="timings-section mt-1">
+        <div class="container">
+            <h2 class="section-title">Darshan Timings</h2>
+            <p class="text-center mb-5" style="font-size: 1.2rem; color: #666;">Plan your divine visit</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="timing-card">
+                        <div class="timing-label">🌅 Morning Darshan</div>
+                        <div class="timing-value">6:00 AM - 12:00 PM</div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="timing-card">
+                        <div class="timing-label">🌆 Evening Darshan</div>
+                        <div class="timing-value">4:00 PM - 9:00 PM</div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="timing-card">
+                        <div class="timing-label">🎉 Special Puja</div>
+                        <div class="timing-value">7:00 AM & 7:00 PM</div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="timing-card">
+                        <div class="timing-label">🌙 Aarti Time</div>
+                        <div class="timing-value">8:00 PM Daily</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

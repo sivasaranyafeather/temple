@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple About Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* About Temple Section */
+        .about-temple-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #E8E8E8 0%, #D3D3D3 50%, #E8E8E8 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-content {
+            padding: 40px;
+            animation: fadeInLeft 1s ease-out;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .about-title {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            color: #000;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .title-underline {
+            width: 150px;
+            height: 3px;
+            background: linear-gradient(90deg, #D4A017, #FF8C00);
+            margin: 0 0 30px 0;
+            border-radius: 2px;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .btn-contact {
+            background: linear-gradient(135deg, #D4A017, #FF8C00);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 8px 20px rgba(212, 160, 23, 0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-contact:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(212, 160, 23, 0.5);
+        }
+
+        .contact-icon {
+            font-size: 1.2rem;
+        }
+
+        /* Image Wrapper - Overlapping Circles */
+        .about-image-wrapper {
+            position: relative;
+            height: 500px;
+            animation: fadeInRight 1s ease-out;
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Large Circular Frame */
+        .large-circular-frame {
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            top: 30px;
+            right: 0;
+            z-index: 1;
+        }
+
+        .large-circle-outer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 12px solid #D4A017;
+            border-radius: 50%;
+            box-shadow: 0 0 50px rgba(212, 160, 23, 0.4);
+        }
+
+        .large-circle-inner {
+            position: absolute;
+            width: 85%;
+            height: 85%;
+            top: 7.5%;
+            left: 7.5%;
+            border: 8px solid #B8860B;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #F5F5F5;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .large-circle-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .large-circular-frame:hover .large-circle-inner img {
+            transform: scale(1.1);
+        }
+
+        /* Small Overlapping Circular Frame */
+        .small-circular-frame {
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            bottom: 10px;
+            left: 0;
+            z-index: 2;
+        }
+
+        .small-circle-outer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 10px solid #D4A017;
+            border-radius: 50%;
+            box-shadow: 0 0 40px rgba(212, 160, 23, 0.4);
+        }
+
+        .small-circle-inner {
+            position: absolute;
+            width: 85%;
+            height: 85%;
+            top: 7.5%;
+            left: 7.5%;
+            border: 6px solid #B8860B;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #F5F5F5;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .small-circle-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .small-circular-frame:hover .small-circle-inner img {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 991px) {
+            .about-image-wrapper {
+                margin-top: 50px;
+                height: 450px;
+            }
+            
+            .large-circular-frame {
+                width: 350px;
+                height: 350px;
+                right: 20px;
+            }
+            
+            .small-circular-frame {
+                width: 220px;
+                height: 220px;
+                left: 20px;
+            }
+
+            .about-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .about-temple-section {
+                padding: 60px 0;
+            }
+
+            .about-content {
+                padding: 20px;
+            }
+
+            .about-title {
+                font-size: 2rem;
+            }
+
+            .large-circular-frame {
+                width: 280px;
+                height: 280px;
+            }
+            
+            .small-circular-frame {
+                width: 180px;
+                height: 180px;
+            }
+
+            .about-image-wrapper {
+                height: 380px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
